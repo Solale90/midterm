@@ -8,7 +8,7 @@ $('.card').click(function(event){
     $('#modal-title').html(title);
     $('#modal-body').html(card.html());
 
-    if (!unavailable) {
+    if (unavailable !== undefined) {
         $('#order-btn').hide();
     } else {
         $('#order-btn').show();
